@@ -1,5 +1,5 @@
 module.exports = {
-  // base: '/d2-admin-doc/lastest/', // 发布到 http://app.d3collection.cn/d2-admin-doc/lastest/
+  base: '/d2-admin-doc/',
   locales: {
     '/': {
       lang: 'en-US',
