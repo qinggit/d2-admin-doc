@@ -3,6 +3,7 @@ node_js: stable
 
 deploy:
   provider: pages
+  local-dir: .vuepress/dist
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
