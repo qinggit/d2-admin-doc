@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/d2-projects/d2-admin-doc/issues"
   },
-  "homepage": "https://github.com/d2-projects/d2-admin-doc#readme"
+  "homepage": "https://github.com/d2-projects/d2-admin-doc#readme",
+  "dependencies": {
+    "vuepress": "^0.14.2"
+  }
 }
