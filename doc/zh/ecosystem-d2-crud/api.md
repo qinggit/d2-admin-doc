@@ -266,6 +266,13 @@ sidebarDepth: 2
 * 可选值: 无
 * 默认值: true
 
+### formatter
+
+* 说明: 用来格式化内容
+* 类型: function(row, column, cellValue, index)
+* 可选值: 无
+* 默认值: 无
+
 ### showOverflowTooltip
 
 * 说明: 当内容过长被隐藏时显示 tooltip
