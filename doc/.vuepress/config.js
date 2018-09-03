@@ -213,6 +213,7 @@ function sideBarArticle (titleUpdate, titleCookbook) {
       title: titleUpdate,
       collapsable: false,
       children: [
+        'update/crud',
         'update/1.2.0',
         'update/ice-1.1.2',
         'update/1.1.5',
