@@ -725,7 +725,7 @@ sidebarDepth: 2
 ### edit.text
 
 * 说明: 编辑按钮文字
-* 类型: Object
+* 类型: String
 * 可选值: 无
 * 默认值: 无
 
@@ -773,7 +773,7 @@ sidebarDepth: 2
 
 ### remove.confirmText
 
-* 说明: 删除confirm框的标题
+* 说明: 删除confirm框的文字
 * 类型: String
 * 可选值: 无
 * 默认值: 无
@@ -816,7 +816,7 @@ sidebarDepth: 2
 ### custom.text
 
 * 说明: 自定义按钮文字
-* 类型: Object
+* 类型: String
 * 可选值: 无
 * 默认值: 无
 
