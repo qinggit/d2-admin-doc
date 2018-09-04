@@ -760,7 +760,21 @@ sidebarDepth: 2
 ### remove.text
 
 * 说明: 删除按钮文字
-* 类型: Object
+* 类型: String
+* 可选值: 无
+* 默认值: 无
+
+### remove.confirmTitle
+
+* 说明: 删除confirm框的标题
+* 类型: String
+* 可选值: 无
+* 默认值: 无
+
+### remove.confirmText
+
+* 说明: 删除confirm框的标题
+* 类型: String
 * 可选值: 无
 * 默认值: 无
 
