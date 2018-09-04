@@ -120,7 +120,7 @@ module.exports = {
           '/zh/learn-knowledge/': sideBarKnowledge(),
           '/zh/sys-components/': sideBarSysComponents(),
           '/zh/sys-plugins/': sideBarSysPlugins(),
-          '/zh/article/': sideBarArticle('版本发布', 'Cookbook'),
+          '/zh/article/': sideBarArticle('版本发布', 'Cookbook', '记录'),
           '/zh/ecosystem-d2-crud/': sideBarEcosystemD2Crud()
         }
       }
@@ -199,7 +199,7 @@ function sideBarSysPlugins () {
   ]
 }
 
-function sideBarArticle (titleUpdate, titleCookbook) {
+function sideBarArticle (titleUpdate, titleCookbook, titleNote) {
   return [
     {
       title: titleCookbook,
@@ -220,6 +220,13 @@ function sideBarArticle (titleUpdate, titleCookbook) {
         'update/1.1.4',
         'update/0.0.0',
         'update/introduce'
+      ]
+    },
+    {
+      title: titleNote,
+      collapsable: false,
+      children: [
+        'note/how-to-make-start-kit'
       ]
     }
   ]
