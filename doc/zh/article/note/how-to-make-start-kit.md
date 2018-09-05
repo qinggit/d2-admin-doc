@@ -295,7 +295,7 @@ watch: {
 * vue-splitpane
 * xlsx
 
-``` shell
+``` sh
 npm remove @d2-projects/d2-crud clipboard-polyfill countup.js echarts file-saver github-markdown-css highlight.js marked papaparse quill simplemde v-charts v-contextmenu vue-grid-layout vue-json-tree-view vue-splitpane xlsx --save
 ```
 
@@ -307,7 +307,7 @@ const baseUrl = '/d2-admin-start-kit/'
 
 ## 测试
 
-``` shell
+``` sh
 npm i
 npm run dev
 ```

@@ -225,7 +225,7 @@ module.exports = {
 
 默认情况下该命令会打印到 stdout，当然为了更易于查阅你可以将其重定向到一个文件：
 
-``` shell
+``` sh
 vue inspect > output.js
 ```
 
@@ -233,7 +233,7 @@ vue inspect > output.js
 
 你也可以审查某一个路径来缩小配置的范围：
 
-``` shell
+``` sh
 # 只审查第一条规则
 vue inspect module.rules.0
 ```
@@ -328,7 +328,7 @@ createElement('img', { attrs: { src: require('../image.png') }})
 
 你可以替换你的项目根目录中的下列文件来指定环境变量：
 
-``` shell
+``` sh
 .env                # 在所有的环境中被载入
 .env.local          # 在所有的环境中被载入，但会被 git 忽略
 .env.[mode]         # 只在指定的模式中被载入
