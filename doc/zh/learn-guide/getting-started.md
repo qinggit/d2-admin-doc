@@ -4,26 +4,6 @@
 
 ![](http://fairyever.qiniudn.com/20180729102354.png?imageMogr2/auto-orient/thumbnail/1480x/blur/1x0/quality/100|imageslim)
 
-## 下载项目
-
-* 完整版仓库 [Github](https://github.com/d2-projects/d2-admin) | [码云](https://gitee.com/fairyever/d2-admin)
-
-* 简化版起始模板 [Github](https://github.com/d2-projects/d2-admin-start-kit) | [码云](https://gitee.com/fairyever/d2-admin-start-kit)
-
-挑选一个您喜欢的网站 Fork 代码到您的仓库，然后下载或克隆。
-
-::: tip
-如果使用 Github 下载过慢，请参考 [常见问题](/zh/question/)。
-:::
-
-我的建议是使用 **简化版起始模板** 因为在完整版的基础上做减法，要比在简化版基础上做加法复杂。
-
-下面的步骤都以简化版起始模板为基础演示如何使用。
-
-下载完成后您会得到这些资源（以 1.1.5 版本为例）：
-
-![](http://fairyever.qiniudn.com/20180729091149.png?imageMogr2/auto-orient/thumbnail/1480x/blur/1x0/quality/100|imageslim)
-
 ## 安装环境
 
 ::: tip
@@ -84,6 +64,77 @@ nrm use taobao
 ```
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
+
+## 下载项目
+
+### d2-admin-cli
+
+[D2 Admin CLI](https://github.com/d2-projects/d2-admin-cli) 是一个基于 `D2 Admin` 的脚手架系统，可以快速生成 `D2 Admin` 项目。
+
+#### 安装 cli
+
+使用 npm
+
+``` bash
+npm install -g @d2-admin/d2-admin-cli
+```
+
+使用 yarn
+
+``` bash
+yarn global add @d2-admin/d2-admin-cli
+```
+
+#### 创建项目
+
+进入想要创建项目的文件夹，运行以下命令来创建一个新项目：
+
+``` sh
+d2 create
+# 或者
+d2 c
+```
+
+##### 项目名称
+
+项目名称即所要创建项目的文件夹名称，默认为 `d2-admin-demo`。
+
+##### 项目模板
+
+- 完整版：包含所有插件和示例代码
+- 简化版：不包含非必须插件和组件，保留所有系统功能
+
+#### 查看 `D2 Admin` 文档
+
+运行以下命令:
+
+``` sh
+d2 doc
+# 或者
+d2 d
+```
+
+### 手动下载
+
+如果你不喜欢使用命令号工具，可以前往仓库下载源码：
+
+* 完整版仓库 [Github](https://github.com/d2-projects/d2-admin) | [码云](https://gitee.com/fairyever/d2-admin)
+
+* 简化版起始模板 [Github](https://github.com/d2-projects/d2-admin-start-kit) | [码云](https://gitee.com/fairyever/d2-admin-start-kit)
+
+挑选一个您喜欢的网站 Fork 代码到您的仓库，然后下载或克隆。
+
+::: tip
+如果使用 Github 下载过慢，请参考 [常见问题](/zh/question/)。
+:::
+
+我的建议是使用 **简化版起始模板** 因为在完整版的基础上做减法，要比在简化版基础上做加法复杂。
+
+下面的步骤都以简化版起始模板为基础演示如何使用。
+
+下载完成后您会得到这些资源（以 1.1.5 版本为例）：
+
+![](http://fairyever.qiniudn.com/20180729091149.png?imageMogr2/auto-orient/thumbnail/1480x/blur/1x0/quality/100|imageslim)
 
 ## 安装依赖
 
