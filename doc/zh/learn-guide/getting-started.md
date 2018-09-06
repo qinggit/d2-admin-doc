@@ -116,7 +116,7 @@ d2 d
 
 ### 手动下载
 
-如果你不喜欢使用命令号工具，可以前往仓库下载源码：
+如果你不喜欢使用命令行工具，可以前往仓库下载源码：
 
 * 完整版仓库 [Github](https://github.com/d2-projects/d2-admin) | [码云](https://gitee.com/fairyever/d2-admin)
 
