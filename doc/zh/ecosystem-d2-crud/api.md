@@ -9,14 +9,14 @@ sidebarDepth: 2
 ### data
 
 * 说明: 显示的数据
-* 类型: array
+* 类型: Array
 * 可选值: 无
 * 默认值: 无
 
 ### columns
 
 * 说明: 表头数据，具体配置项请参考 [columns](#配置-columns)
-* 类型: array
+* 类型: Array
 * 可选值: 无
 * 默认值: 无
 
@@ -227,7 +227,7 @@ sidebarDepth: 2
 ### renderHeader
 
 * 说明: 列标题 Label 区域渲染使用的 Function
-* 类型: function (h, { column, $index })
+* 类型: Function (h, { column, $index })
 * 可选值: 无
 * 默认值: 无
 
@@ -241,14 +241,14 @@ sidebarDepth: 2
 ### sortMethod
 
 * 说明: 对数据进行排序的时候使用的方法，仅当 sortable 设置为 true 的时候有效，需返回一个数字，和 Array.sort 表现一致
-* 类型: function (a, b)
+* 类型: Function (a, b)
 * 可选值: 无
 * 默认值: 无
 
 ### sortBy
 
 * 说明: 指定数据按照哪个属性进行排序，仅当 sortable 设置为 true 且没有设置 sort-method 的时候有效。如果 sort-by 为数组，则先按照第 1 个属性排序，如果第 1 个相等，再按照第 2 个排序，以此类推
-* 类型: String / array / function (row, index)
+* 类型: String / Array / Function (row, index)
 * 可选值: 无
 * 默认值: 无
 
@@ -269,7 +269,7 @@ sidebarDepth: 2
 ### formatter
 
 * 说明: 用来格式化内容
-* 类型: function(row, column, cellValue, index)
+* 类型: Function (row, column, cellValue, index)
 * 可选值: 无
 * 默认值: 无
 
@@ -311,7 +311,7 @@ sidebarDepth: 2
 ### filters
 
 * 说明: 数据过滤的选项，数组格式，数组中的元素需要有 text 和 value 属性。
-* 类型: array[{ text, value }]
+* 类型: Function ({ text, value })
 * 可选值: 无
 * 默认值: 无
 
@@ -332,15 +332,22 @@ sidebarDepth: 2
 ### filterMethod
 
 * 说明: 数据过滤使用的方法，如果是多选的筛选项，对每一条数据会执行多次，任意一次返回 true 就会显示。
-* 类型: function (value, row, column)
+* 类型: Function (value, row, column)
 * 可选值: 无
 * 默认值: 无
 
 ### filteredValue
 
 * 说明: 选中的数据过滤项，如果需要自定义表头过滤的渲染方式，可能会需要此属性。
-* 类型: array
+* 类型: Array
 * 可选值: 无
+* 默认值: 无
+
+### component.name
+
+* 说明: 表格渲染的组件名，组件请参考 [组件](http://element-cn.eleme.io/#/zh-CN/component)
+* 类型: String
+* 可选值: el-input / el-input-number / el-radio / el-checkbox / el-select / el-cascader / el-switch / el-slider / el-time-select / el-time-picker / el-date-picker / el-rate / el-color-picker / 自定义组件
 * 默认值: 无
 
 ## 配置: options
@@ -348,14 +355,14 @@ sidebarDepth: 2
 ### height
 
 * 说明: 表格的高度，默认为自动高度。如果 height 为 number 类型，单位 px；如果 height 为 String 类型，则这个高度会设置为表格的 style.height 的值，表格的高度会受控于外部样式。
-* 类型: String / number
+* 类型: String / Number
 * 可选值: 无
 * 默认值: 无
 
 ### maxHeight
 
 * 说明: 表格的最大高度
-* 类型: String / number
+* 类型: String / Number
 * 可选值: 无
 * 默认值: 无
 
@@ -404,70 +411,70 @@ sidebarDepth: 2
 ### currentRowKey
 
 * 说明: 当前行的 key，只写属性
-* 类型: String / number
+* 类型: String / Number
 * 可选值: 无
 * 默认值: 无
 
 ### rowClassName
 
 * 说明: 行的 className 的回调方法，也可以使用字符串为所有行设置一个固定的 className。
-* 类型: function ({row, rowIndex}) / String
+* 类型: Function ({row, rowIndex}) / String
 * 可选值: 无
 * 默认值: 无
 
 ### rowStyle
 
 * 说明: 行的 style 的回调方法，也可以使用一个固定的 Object 为所有行设置一样的 Style。
-* 类型: function ({row, rowIndex}) / Object
+* 类型: Function ({row, rowIndex}) / Object
 * 可选值: 无
 * 默认值: 无
 
 ### cellClassName
 
 * 说明: 单元格的 className 的回调方法，也可以使用字符串为所有单元格设置一个固定的 className。
-* 类型: function ({row, column, rowIndex, columnIndex}) / String
+* 类型: Function ({row, column, rowIndex, columnIndex}) / String
 * 可选值: 无
 * 默认值: 无
 
 ### cellStyle
 
 * 说明: 单元格的 style 的回调方法，也可以使用一个固定的 Object 为所有单元格设置一样的 Style。
-* 类型: function ({row, column, rowIndex, columnIndex}) / Object
+* 类型: Function ({row, column, rowIndex, columnIndex}) / Object
 * 可选值: 无
 * 默认值: 无
 
 ### headerRowClassName
 
 * 说明: 表头行的 className 的回调方法，也可以使用字符串为所有表头行设置一个固定的 className。
-* 类型: function ({row, rowIndex}) / String
+* 类型: Function ({row, rowIndex}) / String
 * 可选值: 无
 * 默认值: 无
 
 ### headerRowStyle
 
 * 说明: 表头行的 style 的回调方法，也可以使用一个固定的 Object 为所有表头行设置一样的 Style。
-* 类型: function ({row, rowIndex}) / Object
+* 类型: Function ({row, rowIndex}) / Object
 * 可选值: 无
 * 默认值: 无
 
 ### headerCellClassName
 
 * 说明: 表头单元格的 className 的回调方法，也可以使用字符串为所有表头单元格设置一个固定的 className。
-* 类型: function ({row, column, rowIndex, columnIndex}) / String
+* 类型: Function ({row, column, rowIndex, columnIndex}) / String
 * 可选值: 无
 * 默认值: 无
 
 ### headerCellStyle
 
 * 说明: 表头单元格的 style 的回调方法，也可以使用一个固定的 Object 为所有表头单元格设置一样的 Style。
-* 类型: function ({row, column, rowIndex, columnIndex}) / Object
+* 类型: Function ({row, column, rowIndex, columnIndex}) / Object
 * 可选值: 无
 * 默认值: 无
 
 ### rowKey
 
 * 说明: 行数据的 Key，用来优化表格的渲染；在使用 reserveSelection 功能的情况下，该属性是必填的。类型为 String 时，支持多层访问：user.info.id，但不支持 user.info[0].id，此种情况请使用 function。
-* 类型: function (row) / String
+* 类型: Function (row) / String
 * 可选值: 无
 * 默认值: 无
 
@@ -509,14 +516,14 @@ sidebarDepth: 2
 ### summaryMethod
 
 * 说明: 自定义的合计计算方法
-* 类型: function ({ columns, data })
+* 类型: Function ({ columns, data })
 * 可选值: 无
 * 默认值: 无
 
 ### spanMethod
 
 * 说明: 合并行或列的计算方法
-* 类型: function ({ row, column, rowIndex, columnIndex })
+* 类型: Function ({ row, column, rowIndex, columnIndex })
 * 可选值: 无
 * 默认值: 无
 
@@ -560,7 +567,7 @@ sidebarDepth: 2
 ### renderHeader
 
 * 说明: indexRow 标题 Label 区域渲染使用的 Function
-* 类型: function (h, { column, $index })
+* 类型: Function (h, { column, $index })
 * 可选值: 无
 * 默认值: 无
 
@@ -632,14 +639,14 @@ sidebarDepth: 2
 ### renderHeader
 
 * 说明: selectionRow 标题 Label 区域渲染使用的 Function
-* 类型: function (h, { column, $index })
+* 类型: Function (h, { column, $index })
 * 可选值: 无
 * 默认值: 无
 
 ### resizable
 
 * 说明: selectionRow 是否可以通过拖动改变宽度（需要在 options 中设置 border 属性为 true
-* 类型: fBoolean
+* 类型: Boolean
 * 可选值: 无
 * 默认值: true
 
@@ -711,7 +718,7 @@ sidebarDepth: 2
 ### renderHeader
 
 * 说明: 操作列 Label 区域渲染使用的 Function
-* 类型: function (h, { column, $index })
+* 类型: Function (h, { column, $index })
 * 可选值: 无
 * 默认值: 无
 
@@ -749,6 +756,20 @@ sidebarDepth: 2
 * 类型: String
 * 可选值: 无
 * 默认值: 无
+
+### edit.show
+
+* 说明: 控制是否显示编辑按钮，类型为 `Function` 时，返回值只能为 `true` 或 `false`
+* 类型: Boolean / Function (index, row)
+* 可选值: 无
+* 默认值: true
+
+### edit.disabled
+
+* 说明: 控制是否禁用编辑按钮，类型为 `Function` 时，返回值只能为 `true` 或 `false`
+* 类型: Boolean / Function (index, row)
+* 可选值: 无
+* 默认值: false
 
 ### remove
 
@@ -799,6 +820,20 @@ sidebarDepth: 2
 * 可选值: 无
 * 默认值: 无
 
+### remove.show
+
+* 说明: 控制是否显示删除按钮，类型为 `Function` 时，返回值只能为 `true` 或 `false`
+* 类型: Boolean / Function (index, row)
+* 可选值: 无
+* 默认值: true
+
+### remove.disabled
+
+* 说明: 控制是否禁用删除按钮，类型为 `Function` 时，返回值只能为 `true` 或 `false`
+* 类型: Boolean / Function (index, row)
+* 可选值: 无
+* 默认值: false
+
 ### custom
 
 * 说明: 自定义按钮
@@ -840,6 +875,20 @@ sidebarDepth: 2
 * 类型: String
 * 可选值: 无
 * 默认值: 无
+
+### custom.show
+
+* 说明: 控制是否显示自定义按钮，类型为 `Function` 时，返回值只能为 `true` 或 `false`
+* 类型: Boolean / Function (index, row)
+* 可选值: 无
+* 默认值: true
+
+### custom.disabled
+
+* 说明: 控制是否禁用自定义按钮，类型为 `Function` 时，返回值只能为 `true` 或 `false`
+* 类型: Boolean / Function (index, row)
+* 可选值: 无
+* 默认值: false
 
 ## 配置: add-button
 
@@ -919,34 +968,34 @@ sidebarDepth: 2
 
 * 说明: 表单渲染的组件名，组件请参考 [组件](http://element-cn.eleme.io/#/zh-CN/component)
 * 类型: String
-* 可选值: el-input / el-input-number / el-radio / el-checkbox / el-select / el-cascader / el-switch / el-slider / el-time-select / el-time-picker / el-date-picker / el-rate / el-color-picker
+* 可选值: el-input / el-input-number / el-radio / el-checkbox / el-select / el-cascader / el-switch / el-slider / el-time-select / el-time-picker / el-date-picker / el-rate / el-color-picker / 自定义组件
 * 默认值: 无
 
 ### component.span
 
 * 说明: 表单布局所占栅格数，栅格布局请参考 [Layout 布局](http://element-cn.eleme.io/#/zh-CN/component/layout)
-* 类型: number
+* 类型: Number
 * 可选值: 无
 * 默认值: 无
 
 ### component.offset
 
 * 说明: 表单栅格布局偏移量，栅格布局请参考 [Layout 布局](http://element-cn.eleme.io/#/zh-CN/component/layout)
-* 类型: number
+* 类型: Number
 * 可选值: 无
 * 默认值: 无
 
 ### component.options
 
 * 说明: el-radio / el-checkbox / el-select 中的 options
-* 类型: array
+* 类型: Array
 * 可选值: 无
 * 默认值: 无
 
 ### component.render
 
 * 说明: 使用render函数创建组件
-* 类型: function (h)
+* 类型: Function (h)
 * 可选值: 无
 * 默认值: 无
 
@@ -997,6 +1046,6 @@ sidebarDepth: 2
 ### gutter
 
 * 说明: 表单栅格间隔
-* 类型: number
+* 类型: Number
 * 可选值: 无
 * 默认值: 0
