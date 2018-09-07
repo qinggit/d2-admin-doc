@@ -164,6 +164,25 @@ util.title('NewTitle')
 util.open('http://www.xxx.com')
 ```
 
+## util.param2Obj
+
+**介绍：**
+
+将 url 参数转换为对象
+
+**参数**
+
+| 参数名 | 介绍 | 必选 | 值类型 | 可选值 | 默认值 |
+| --- | --- | --- | --- | --- | --- |
+| url | 地址 | 必选 | String |  |  |
+
+**使用示例：**
+
+``` js
+util.param2Obj('http://www.xxx.com?a=1&b=2')
+// {a: "1", b: "2"}
+```
+
 ## util.ua
 
 **介绍：**
